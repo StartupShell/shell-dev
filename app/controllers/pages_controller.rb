@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
-  def index
-  end
+	layout 'frontend'
+	def index
+		#client = GData::Client::Calendar.new
+
+	end
 end

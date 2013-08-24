@@ -1,6 +1,14 @@
 <div class="event-wrapper">
 <% cache("cal", :expires_in => 15.minutes) do %>
-    <% @events.each do |entry| %>
+    <% 
+    require 'open-uri'
+    require 'json'
+    feed = "7qvrobfs0js5799ebugodgc5go%40group.calendar.google.com"
+    results = "4"
+    url = "http://www.google.com/calendar/feeds/"+feed+"/public/full?alt=json&orderby=starttime&max-results="+results+"&singleevents=true&sortorder=ascending&futureevents=true"
+    doc = open(url)
+    jsonObj = JSON.load(doc)
+    jsonObj['feed']['entry'].each do |entry| %>
     <% time = DateTime.iso8601(entry['gd$when'][0]['startTime']) %>
     <a href="<%= entry['link'][0]['href'] %>" target="_blank">
         <div class="event-block container_12">

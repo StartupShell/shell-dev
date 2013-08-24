@@ -1,11 +1,11 @@
 <% #dem startups
 startups = [["http://512technology.com", "logo-512.png", "512 Technology"],
-            ["javascript:", "logo-arcadeglass.png", "Arcade Glass"], 
+            ["", "logo-arcadeglass.png", "Arcade Glass"], 
             ["http://shopevlove.com", "logo-evlove.png", "Evlove"],
             ["http://foodrecoverynetwork.org", "logo-frn.png", "Food Recovery Network"],
             ["http://jhilmd.com", "logo-jhilmediadesign.png", "JHil Media Design"],
             ["http://paralleltracks.com", "logo-paralleltracks.png", "Parallel Tracks"],
-            ["javascript:", "logo-sweetbuds.png", "Sweet Buds"],
+            ["", "logo-sweetbuds.png", "Sweet Buds"],
             ["http://ventureboard.co", "logo-ventureboard.png", "VentureBoard"]]
 
 %>
@@ -16,8 +16,17 @@ startups = [["http://512technology.com", "logo-512.png", "512 Technology"],
 
     <h2>Home to diverse ventures</h2>
     <div class="startup-grid container_12">
-        <% startups.shuffle.each do |start| %>
-            <%= link_to(image_tag("startups/"+start[1], :class => "grid_3", :alt=>start[2]), start[0], :target => "_blank")%>
+        <% startups.shuffle.each do |start|
+            # if no URL disable cursor and clicking
+            hide = ""
+            if start[0] == ""
+                hide = " noLink"
+                start[0] = "javascript:"
+            end
+            %>
+            
+
+            <%= link_to(image_tag("startups/"+start[1], :class => "grid_3" + hide, :alt=>start[2]), start[0], :target => "_blank")%>
         <% end %>
     </div>
 
@@ -28,5 +37,8 @@ startups = [["http://512technology.com", "logo-512.png", "512 Technology"],
             <li><a href="#">Hacks</a></li>
         </ul>
     </nav>
+
+
+
 
 </div> <!-- end .inner-section -->

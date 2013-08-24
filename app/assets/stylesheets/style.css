@@ -463,6 +463,9 @@ footer {
   color: #888888;
 }
 /* BUTTONS */
+.noLink {
+  cursor: default;
+}
 .apply-button a,
 .apply-button a:visited {
   font-family: 'Titillium Web', sans-serif;

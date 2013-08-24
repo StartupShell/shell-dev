@@ -1,12 +1,25 @@
+<% #dem startups
+startups = [["http://512technology.com", "logo-512.png", "512 Technology"],
+            ["javascript:", "logo-arcadeglass.png", "Arcade Glass"], 
+            ["http://shopevlove.com", "logo-evlove.png", "Evlove"],
+            ["http://foodrecoverynetwork.org", "logo-frn.png", "Food Recovery Network"],
+            ["http://jhilmd.com", "logo-jhilmediadesign.png", "JHil Media Design"],
+            ["http://paralleltracks.com", "logo-paralleltracks.png", "Parallel Tracks"],
+            ["javascript:", "logo-sweetbuds.png", "Sweet Buds"],
+            ["http://ventureboard.co", "logo-ventureboard.png", "VentureBoard"]]
+
+%>
+
 <a class="anchor" id="startups"></a>
 <div class="section-title"><h1>Startups</h1></div>
 <div class="inner-section">
 
     <h2>Home to diverse ventures</h2>
-    <div class="feature">
-        <img src="http://dummyimage.com/960x440/4d494d/686a82.gif&text=roster" alt="roster">
+    <div class="startup-grid container_12">
+        <% startups.shuffle.each do |start| %>
+            <%= link_to(image_tag("startups/"+start[1], :class => "grid_3", :alt=>start[2]), start[0], :target => "_blank")%>
+        <% end %>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
 
     <nav class="more-menu">
         <p>more:</p>

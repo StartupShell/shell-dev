@@ -9,6 +9,7 @@
     doc = open(url)
     jsonObj = JSON.load(doc)
     jsonObj['feed']['entry'].each do |entry| %>
+    
     <% time = DateTime.iso8601(entry['gd$when'][0]['startTime']) %>
     <a href="<%= entry['link'][0]['href'] %>" target="_blank">
         <div class="event-block container_12">

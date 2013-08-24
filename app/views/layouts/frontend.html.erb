@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Startup Shell Dev</title>
+	<title>Startup Shell</title>
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -23,39 +23,27 @@
         <header class="header clearfix floating" id="header">
             <div class="inner-header">
                 <div class="logo">
-                    <a href="#welcome"><%=image_tag("logo.png", alt: "FEARLESS")%><h1>Startup Shell</h1></a>
+                    <a href="#top"><%=image_tag("logo.png", alt: "FEARLESS")%><h1>Startup Shell</h1></a>
                 </div>
                 <nav class="top-menu">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#startups">Startups</a></li>
-                        <li><a href="#people">People</a></li>
-                        <li><a href="#engage">Engage</a></li>
-                        <li><a href="#connect">Connect</a></li>
+                        <li><%=link_to("About", "/#about")%></li>
+                        <li><%=link_to("Startups", "/#startups")%></li>
+                        <li><%=link_to("People", "/#people")%></li>
+                        <li><%=link_to("Engage", "/#engage")%></li>
+                        <li><%=link_to("Connect", "/#connect")%></li>
                     </ul>
                 </nav>
             </div> <!-- end #inner-header -->
         </header> <!-- end .header -->
     </div> <!-- end #header-wrapper -->
 
-    <a class="anchor" id="welcome"></a>
-    
-    <section class="welcome">
-        <div class="inner-section">
-
-            <h2>Think. Build. Play.</h2>
-            <div class="feature">
-                <iframe src="http://player.vimeo.com/video/70408127?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=a0c9ca" width="960" height="541" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-            </div>
-
-        </div> <!-- end .inner-section -->
-    </section> <!-- end section .welcome -->
-
+    <a class="anchor" id="top"></a>
 
     <div class="container">
         <div class="content clearfix">
 			<%= yield %>
-			<footer>
+			<footer class="inner-section">
 	            <p>&copy; 2013 Startup Shell, University of Maryland</p>
 	        </footer>
 	    </div> <!-- end .content -->

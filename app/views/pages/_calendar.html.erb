@@ -1,19 +1,25 @@
 <div class="event-wrapper">
-<% @events.each do |entry| %>
-<% time = DateTime.iso8601(entry['gd$when'][0]['startTime']) %>
-    <div class="event-block container_12"><a href="#" />
-	    <div class="event-date grid_2 alpha">
-	        <span class="event-month"><%= time.strftime("%B") %></span>
-	        <span class="event-day"><%= time.day %></span>
-	    </div>
-        <div class="event-details grid_10">
-            <div class="event-title clearfix">
-                <h2 class="event-name"><%= entry['title']['$t'] %></h2>
-                <p class="event-location"><%= entry['gd$where'][0]['valueString'] %></p>
-                <p class="event-time"><%= time.strftime("%l:%M %P") %></p>
+<% cache("cal", :expires_in => 15.minutes) do %>
+    <% @events.each do |entry| %>
+    <% time = DateTime.iso8601(entry['gd$when'][0]['startTime']) %>
+    <a href="<%= entry['link'][0]['href'] %>" target="_blank">
+        <div class="event-block container_12">
+    	    <div class="event-date grid_2 alpha">
+    	        <span class="event-month"><%= time.strftime("%B") %></span>
+    	        <span class="event-day"><%= time.day %></span>
+    	    </div>
+            <div class="event-details grid_10">
+                <div class="event-title clearfix">
+                    <h2 class="event-name clearfix"><%= entry['title']['$t'] %></h2>
+                    <div class="clearfix">
+                        <p class="event-location"><%= entry['gd$where'][0]['valueString'] %></p>
+                        <p class="event-time"><%= time.strftime("%l:%M %P") %></p>
+                    </div>
+                </div>
+                <p class="event-description clearfix"><%= entry['content']['$t'] %></p>
             </div>
-            <p class="event-description clearfix">First Look Fair is one of the longest running involvement traditions at the University of Maryland.  The event is host to more than 500 student clubs and organizations, campus departments and services, local vendors.</p>
         </div>
-    </div>
+    </a>
+    <% end %>
 <% end %>
 </div>

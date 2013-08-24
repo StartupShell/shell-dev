@@ -10,7 +10,7 @@
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-	<%= stylesheet_link_tag "normalize.min", "style" %>
+	<%= stylesheet_link_tag "normalize.min", "style", "960_12_col" %>
 	<%= javascript_include_tag "vendor/modernizr-2.6.2.min" %>
 	<%= csrf_meta_tags %>
 </head>
@@ -19,7 +19,7 @@
 	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
 
-	<div id="header-wrapper">
+  <div id="header-wrapper">
         <header class="header clearfix floating" id="header">
             <div class="inner-header">
                 <div class="logo">
@@ -39,19 +39,21 @@
     </div> <!-- end #header-wrapper -->
 
     <a class="anchor" id="welcome"></a>
-
+    
     <section class="welcome">
-	    <div class="inner-section">
-	        <h2>Let's move things together</h2>
-	        <div class="feature">
-	            <iframe src="http://player.vimeo.com/video/70408127?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=a0c9ca" width="780" height="439" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-	        </div>
+        <div class="inner-section">
 
-	    </div> <!-- end .inner-section -->
-	</section> <!-- end section .welcome -->
+            <h2>Think. Build. Play.</h2>
+            <div class="feature">
+                <iframe src="http://player.vimeo.com/video/70408127?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=a0c9ca" width="960" height="541" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
 
-	<div class="container">
-		<div class="content clearfix">
+        </div> <!-- end .inner-section -->
+    </section> <!-- end section .welcome -->
+
+
+    <div class="container">
+        <div class="content clearfix">
 			<%= yield %>
 			<footer>
 	            <p>&copy; 2013 Startup Shell, University of Maryland</p>

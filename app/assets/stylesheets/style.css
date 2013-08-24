@@ -30,6 +30,16 @@ TRANSITION
 BOX SHADOW
 *********************/
 /* .boxShadow(0,0,4px,0,#444); */
+/*********************
+BUTTON
+*********************/
+.button {
+  background: #dd6666;
+  color: #ffffff;
+}
+.button:hover {
+  color: #eeeeee;
+}
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -201,9 +211,6 @@ body {
   color: #888888;
   text-align: center;
 }
-p {
-  text-align: left;
-}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -301,6 +308,7 @@ h2 a,
 p,
 .p {
   font-size: 18px;
+  text-align: left;
 }
 /* HEADER */
 header {
@@ -321,6 +329,7 @@ header .logo img {
 }
 header .logo a h1 {
   font-size: 18px;
+  text-align: left;
   float: left;
   text-decoration: none;
   color: #888888;
@@ -335,11 +344,11 @@ header .top-menu {
 .floating {
   position: fixed;
   width: 100%;
-  top: -2;
+  top: 0;
 }
 /* NAVIGATION */
 .anchor {
-  padding: 50px;
+  padding: 20px;
 }
 nav.top-menu ul {
   margin: 0;
@@ -410,7 +419,6 @@ section .feature {
   margin: 80px 0 40px 0;
 }
 .inner-section p {
-  max-width: 780px;
   margin-bottom: 10px;
   margin: 0 auto;
 }
@@ -442,6 +450,89 @@ section .feature {
 /* FOOTER */
 footer {
   margin: 80px 0;
+}
+/* BUTTONS */
+.apply-button a,
+.apply-button a:visited {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  text-rendering: optimizelegibility;
+  font-size: 50px;
+  color: #dd6666;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: #dd6666;
+  color: #ffffff;
+  font-size: 30px;
+}
+.apply-button a a,
+.apply-button a:visited a {
+  text-decoration: none;
+}
+.apply-button a a,
+.apply-button a:visited a {
+  text-decoration: none;
+}
+.apply-button a:hover,
+.apply-button a:visited:hover {
+  color: #eeeeee;
+}
+/* EVENTS SECTION */
+.event-wrapper {
+  margin-top: 40px;
+}
+.event-block {
+  margin-bottom: 40px;
+}
+.event-block:hover .event-location,
+.event-block:hover .event-description {
+  color: #dd6666;
+}
+.event-date {
+  background: #888888;
+  color: #ffffff;
+  height: 140px;
+  padding-top: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.event-date .event-month {
+  text-transform: lowercase;
+}
+.event-date .event-day {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 72px;
+  margin: 0;
+  line-height: 1;
+}
+.event-details .event-name {
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 36px;
+  margin: 0 20px 0 0;
+  text-align: left;
+  float: left;
+  display: inline-block;
+}
+.event-details .event-location {
+  float: left;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 19px;
+  color: #888888;
+}
+.event-details .event-description {
+  margin-top: 10px;
+  *zoom: 1;
+  display: block;
+  color: #888888;
 }
 /* FANCY STYLES */
 ::-moz-selection {

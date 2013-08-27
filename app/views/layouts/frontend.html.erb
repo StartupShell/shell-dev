@@ -23,7 +23,7 @@
         <header class="header clearfix floating" id="header">
             <div class="inner-header">
                 <div class="logo">
-                    <%=link_to(image_tag("logo.png", alt: "FEARLESS"), "/")%><h1>Startup Shell</h1></a>
+                    <%=link_to(image_tag("logo.png", alt: "FEARLESS")+"Startup Shell", "/")%>
                 </div>
                 <nav class="top-menu">
                     <ul>
@@ -31,7 +31,7 @@
                         <li><%=link_to("Events", "/#events")%></li>
                         <li><%=link_to("Startups", "/#startups")%></li>
                         <li><%=link_to("People", "/#people")%></li>
-                        <li><%=link_to("Apply", controller: "pages", action: "apply")%></li>
+                        <li><%=link_to("Apply",  {controller: "pages", action: "apply"}, {id: "apply"})%></li>
                     </ul>
                 </nav>
             </div> <!-- end #inner-header -->

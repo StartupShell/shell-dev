@@ -1,22 +1,10 @@
-<% #dem startups
-startups = [["http://512technology.com", "logo-512.png", "512 Technology"],
-            ["", "logo-arcadeglass.png", "Arcade Glass"], 
-            ["http://shopevlove.com", "logo-evlove.png", "Evlove"],
-            ["http://foodrecoverynetwork.org", "logo-frn.png", "Food Recovery Network"],
-            ["http://jhilmd.com", "logo-jhilmediadesign.png", "JHil Media Design"],
-            ["http://paralleltracks.com", "logo-paralleltracks.png", "Parallel Tracks"],
-            ["", "logo-sweetbuds.png", "Sweet Buds"],
-            ["http://ventureboard.co", "logo-ventureboard.png", "VentureBoard"]]
-
-%>
-
 <a class="anchor" id="startups"></a>
 <div class="section-title"><h1>Startups</h1></div>
 <div class="inner-section">
 
     <h2>Home to diverse ventures</h2>
     <div class="startup-grid container_12">
-        <% startups.shuffle.each do |start|
+        <% @startups.shuffle.each do |start|
             # if no URL disable cursor and clicking
             hide = ""
             if start[0] == ""

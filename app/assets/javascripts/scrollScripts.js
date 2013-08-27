@@ -3,7 +3,7 @@ $(document).ready(function(){
 
   //nav-active
   smoothScroll();
-  //mobileScrollNav();
+  //scrollDisplay();
 });
 
 function smoothScroll() {

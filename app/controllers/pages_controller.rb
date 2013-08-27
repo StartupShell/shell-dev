@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
 	layout 'frontend'
 	def index 
+        ## Startup Configuration ##
+        # url, logo, altText
 		startupFiles = [["http://512technology.com", "logo-512.png", "512 Technology"],
             ["", "logo-arcadeglass.png", "Arcade Glass"], 
             ["http://shopevlove.com", "logo-evlove.png", "Evlove"],

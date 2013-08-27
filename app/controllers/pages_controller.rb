@@ -1,6 +1,10 @@
 class PagesController < ApplicationController
 	layout 'frontend'
 	def index 
+        ## Calendar Configuration ##
+        @id = "7qvrobfs0js5799ebugodgc5go%40group.calendar.google.com"
+        @results = "4"
+
         ## Startup Configuration ##
         # url, logo, altText
 		startupFiles = [["http://512technology.com", "logo-512.png", "512 Technology"],

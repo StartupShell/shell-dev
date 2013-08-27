@@ -17,3 +17,7 @@
 <section class="apply">
     <%= render "pages/apply" %>
 </section> <!-- end section .engage -->
+<% content_for :jquery do %>
+  <%= javascript_include_tag "scrollScripts" %>
+<% end %>
+

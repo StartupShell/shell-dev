@@ -41,9 +41,10 @@ function scrollDisplay() {
      // Get container scroll position
      var fromTop = $(this).scrollTop()+headerHeight;
      // Get id of current scroll item
-    if (fromTop < 160) {
+    if (fromTop < 120) {
       $("#nav-apply").addClass("nav-emphasis");
       $(headerItems).removeClass("nav-active");
+
     } else  {
       $("#nav-apply").removeClass("nav-emphasis");
       var cur = scrollItems.map(function(){

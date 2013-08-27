@@ -8,11 +8,10 @@
             # if no URL disable cursor and clicking
             hide = ""
             if start[0] == ""
-                hide = " noLink"
+                hide = " no-link"
                 start[0] = "javascript:"
             end
             %>
-            
 
             <%= link_to(image_tag("startups/"+start[1], :class => "grid_3" + hide, :alt=>start[2]), start[0], :target => "_blank")%>
         <% end %>

@@ -218,10 +218,11 @@ textarea {
 }
 body {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.5;
   font-family: 'Titillium Web', sans-serif;
   color: #666666;
   text-align: center;
+  overflow-y: scroll;
 }
 ::-moz-selection {
   background: #b3d4fc;
@@ -319,7 +320,6 @@ h2 a,
 }
 p,
 .p {
-  font-size: 18px;
   text-align: left;
 }
 /* HEADER */
@@ -358,7 +358,7 @@ header .top-menu {
 }
 /* NAVIGATION */
 .anchor {
-  padding: 20px;
+  padding: 40px;
 }
 nav.top-menu ul {
   margin: 0;
@@ -381,19 +381,17 @@ nav.top-menu ul li a:visited:focus {
   background: #ffffff;
   color: #666666;
 }
-nav.top-menu ul li a[href*="apply"],
-nav.top-menu ul li a:visited[href*="apply"] {
+.nav-emphasis {
   background: #dd6666;
 }
-nav.top-menu ul li a[href*="apply"]:hover,
-nav.top-menu ul li a:visited[href*="apply"]:hover,
-nav.top-menu ul li a[href*="apply"]:focus,
-nav.top-menu ul li a:visited[href*="apply"]:focus {
+.nav-emphasis:hover,
+.nav-emphasis:focus {
   background: #ffffff;
   color: #666666;
 }
 .nav-active {
-  color: #eeeeee;
+  background: #eeeeee;
+  color: #666666 !important;
 }
 .more-menu {
   margin-top: 60px;
@@ -587,6 +585,9 @@ footer {
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+.startup-grid {
+  margin-left: -10px;
 }
 .startup-grid img {
   opacity: .8;

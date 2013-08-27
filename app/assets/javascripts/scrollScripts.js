@@ -23,13 +23,3 @@ function smoothScroll() {
   });
 }
 
-function mobileScrollNav() {
-  $(window).scroll({
-    lastTop: 0
-  },
-  function() {
-    var currentTop = $(window).scrollTop();
-
-  }
-}
-

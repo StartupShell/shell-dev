@@ -352,6 +352,61 @@ nav.top-menu ul li a:visited:focus {
   background: #ffffff;
   color: #666666;
 }
+.more-menu {
+  margin-top: 60px;
+  display: block;
+}
+.more-menu p {
+  float: left;
+  padding-top: 8px;
+}
+.more-menu ul {
+  float: left;
+  margin: 0;
+  padding-left: 20px;
+}
+.more-menu ul li {
+  float: left;
+}
+.more-menu ul li a,
+.more-menu ul li a:visited {
+  color: #666666;
+  text-decoration: none;
+  display: block;
+  text-transform: lowercase;
+  border: 1px #dd6666 solid;
+  margin: 0 10px;
+  padding: 8px 20px;
+}
+.more-menu ul li a:hover,
+.more-menu ul li a:visited:hover,
+.more-menu ul li a:focus,
+.more-menu ul li a:visited:focus {
+  background: #dd6666;
+  color: #ffffff;
+}
+/* SECTIONS */
+section {
+  padding: 40px 0;
+}
+section .feature {
+  margin-bottom: 40px;
+}
+.section-alt {
+  background: #eeeeee;
+}
+.inner-section {
+  width: 96%;
+  padding: 0 0 80px;
+  margin: 0 auto;
+}
+.inner-section h1 {
+  margin-bottom: 40px;
+}
+.inner-section p {
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
 @media only screen and (min-width: 768px) {
   body {
     overflow-y: scroll;
@@ -444,60 +499,10 @@ nav.top-menu ul li a:visited:focus {
     background: #eeeeee;
     color: #666666 !important;
   }
-  .more-menu {
-    margin-top: 60px;
-    display: block;
-  }
-  .more-menu p {
-    float: left;
-    padding-top: 8px;
-  }
-  .more-menu ul {
-    float: left;
-    margin: 0;
-    padding-left: 20px;
-  }
-  .more-menu ul li {
-    float: left;
-  }
-  .more-menu ul li a,
-  .more-menu ul li a:visited {
-    color: #666666;
-    text-decoration: none;
-    display: block;
-    text-transform: lowercase;
-    border: 1px #dd6666 solid;
-    margin: 0 10px;
-    padding: 8px 20px;
-  }
-  .more-menu ul li a:hover,
-  .more-menu ul li a:visited:hover,
-  .more-menu ul li a:focus,
-  .more-menu ul li a:visited:focus {
-    background: #dd6666;
-    color: #ffffff;
-  }
   /* SECTIONS */
-  section {
-    padding: 40px 0;
-  }
-  section .feature {
-    margin-bottom: 40px;
-  }
-  .section-alt {
-    background: #eeeeee;
-  }
   .inner-section {
     width: 960px;
     padding: 0 10px 80px;
-    margin: 0 auto;
-  }
-  .inner-section h1 {
-    margin-bottom: 40px;
-  }
-  .inner-section p {
-    margin-bottom: 10px;
-    margin: 0 auto;
   }
   .about {
     background: #dd6666;

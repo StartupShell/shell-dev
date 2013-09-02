@@ -1,0 +1,136 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: @titillium;
+    color: @gray;
+    text-align: center;
+}
+
+/* LAYOUT STYLES */
+
+.container {
+	margin: 0 auto;
+}
+
+/* LINKS */
+
+a, a:visited {
+    color: @red;
+    text-decoration: underline;
+
+
+    /* mobile tap color */
+    &:link {
+        /*
+        this highlights links on iPhones/iPads.
+        so it basically works like the :hover selector
+        for mobile devices.
+        */
+        -webkit-tap-highlight-color : @red;
+    }
+}
+
+/* HEADINGS */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: @titillium;
+	font-weight: 700;
+    text-rendering: optimizelegibility;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h1, .h1 {
+	font-size: 50px;
+	color: @red;
+	text-transform: uppercase;
+	margin: 0;
+ }
+
+h2, .h2 {
+	.h1;
+	font-size: 36px;
+}
+
+h3, .h3 {
+}
+
+h4, .h4 {
+}
+
+p, .p {
+	text-align: left;
+}
+
+/* HEADER */
+
+header {
+
+	background: @gray;
+	position: relative;
+	// .boxShadow(0,0,4px,0,rgba(0,0,0,0.35));
+	z-index: 1;
+
+	.inner-header {
+		max-width: 960px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+
+	.logo {
+
+		margin: 0 auto;
+		margin-top: 20px;
+
+		img {
+			float: left;
+		}
+
+		a span {
+			float: left;
+			text-decoration: none;
+			color: @white;
+			margin: 2px 0 0 10px;
+			text-transform: lowercase;
+		}
+	}
+
+	.top-menu {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+}
+
+/* NAVIGATION */
+
+.anchor {
+	padding: 80px;
+}
+
+nav.top-menu {
+
+	ul {
+	
+		margin: 0;
+	
+		li {
+			float: left;
+
+			a, a:visited {
+				color: @white;
+				text-decoration: none;
+				padding: 24px;
+				display: block;
+				text-transform: lowercase;
+    			
+    			&:hover, &:focus {
+    				background: @white;
+    				color: @gray;
+    			}
+			}
+		}
+	}
+}

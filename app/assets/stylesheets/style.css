@@ -11,6 +11,13 @@
 
   margin: 0;
 }
+.disabled {
+  border: #666666 solid 1px;
+}
+.disabled:hover {
+  background: #666666;
+  color: #eeeeee;
+}
 /*********************
 COLORS
 *********************/

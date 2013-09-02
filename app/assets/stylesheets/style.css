@@ -11,13 +11,6 @@
 
   margin: 0;
 }
-.disabled {
-  border: #666666 solid 1px;
-}
-.disabled:hover {
-  background: #666666;
-  color: #eeeeee;
-}
 /*********************
 COLORS
 *********************/
@@ -675,5 +668,12 @@ nav.top-menu ul li a:visited:focus {
     background: #dd6666;
     color: #ffffff;
     text-shadow: none;
+  }
+  .disabled {
+    border: #666666 solid 1px;
+  }
+  .disabled:hover {
+    background: #666666;
+    color: #eeeeee;
   }
 }

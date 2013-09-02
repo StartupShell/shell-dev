@@ -4,7 +4,7 @@
 
 <section class="events section-alt">
     <%= render "pages/events" %>
-</section> <!-- end section .engage -->
+</section> <!-- end section .events -->
 
 <section class="startups">
     <%= render "pages/startups" %>
@@ -16,8 +16,12 @@
 
 <section class="apply">
     <%= render "pages/apply" %>
-</section> <!-- end section .engage -->
+</section> <!-- end section .apply -->
+
+<footer class="footer">
+    <%= render "pages/footer" %>
+</footer> <!-- end footer -->
+
 <% content_for :jquery do %>
   <%= javascript_include_tag "scrollScripts" %>
 <% end %>
-

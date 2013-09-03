@@ -412,6 +412,7 @@ section .feature img {
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
+  @import "960_12_col.css";
   body {
     overflow-y: scroll;
   }

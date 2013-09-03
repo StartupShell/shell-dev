@@ -384,7 +384,7 @@ section .feature img {
 }
 /* FOOTER */
 .footer {
-  padding: 20px 0 40px;
+  padding: 20px 0;
   background: #666666;
   color: #eeeeee;
 }
@@ -538,7 +538,7 @@ section .feature img {
     width: 100%;
   }
   .inner-section {
-    max-width: 960px;
+    max-width: 940px;
     width: 100%;
     padding: 20px 0;
   }

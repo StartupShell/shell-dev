@@ -90,7 +90,7 @@ nav.top-menu {
 	color: @yellow !important;
 	&:hover, &:focus {
 		background: @white;
-		color: @gray;
+		color: @gray !important;
 	}
 }
 
@@ -118,8 +118,8 @@ nav.top-menu {
 
 .divider {
 	height: 1px;
-	margin-top: -1px;
-	border-top: 1px @gray solid;
+	margin-top: 1px;
+	border-top: 1px @mid-gray solid;
 	padding: 10px 0;
 }
 
@@ -270,7 +270,8 @@ a.disabled {
 	margin: 0 -10px !important;
 	img {
 		opacity: .75;
-		margin-bottom: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		.t1;
 		&:hover {
 			opacity: 1;

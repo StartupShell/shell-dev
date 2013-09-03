@@ -278,6 +278,7 @@ h1,
   color: #dd6666;
   text-transform: uppercase;
   margin: 20px 0;
+  line-height: 1.15;
 }
 h2,
 .h2 {
@@ -288,6 +289,7 @@ h2,
   color: #dd6666;
   text-transform: uppercase;
   margin: 20px 0;
+  line-height: 1.15;
   font-size: 36px;
 }
 h2 a,
@@ -384,9 +386,13 @@ section .feature img {
 }
 /* FOOTER */
 .footer {
-  padding: 20px 0;
+  padding: 60px 0;
   background: #666666;
   color: #eeeeee;
+}
+.footer .anchor {
+  padding: 0;
+  margin: 0;
 }
 .footer-left {
   float: left;
@@ -418,6 +424,7 @@ section .feature img {
   color: #dd6666;
   text-transform: uppercase;
   margin: 20px 0;
+  line-height: 1.15;
   font-size: 36px;
   text-align: center;
   width: 100%;
@@ -526,7 +533,7 @@ section .feature img {
   .nav-emphasis:hover,
   .nav-emphasis:focus {
     background: #ffffff;
-    color: #666666;
+    color: #666666 !important;
   }
   .nav-active {
     background: #eeeeee;
@@ -544,8 +551,8 @@ section .feature img {
   }
   .divider {
     height: 1px;
-    margin-top: -1px;
-    border-top: 1px #666666 solid;
+    margin-top: 1px;
+    border-top: 1px #cccccc solid;
     padding: 10px 0;
   }
   /* MORE MENU */
@@ -690,7 +697,8 @@ section .feature img {
   }
   .startup-grid img {
     opacity: .75;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;

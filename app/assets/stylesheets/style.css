@@ -521,7 +521,7 @@ section .feature img {
     color: #666666;
   }
   .nav-emphasis {
-    background: #dd6666;
+    color: #ffff88 !important;
   }
   .nav-emphasis:hover,
   .nav-emphasis:focus {

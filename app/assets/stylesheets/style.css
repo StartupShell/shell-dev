@@ -682,10 +682,11 @@ section .feature img {
     color: #ffffff;
     text-shadow: none;
   }
-  .disabled {
+  a.disabled {
     border: #666666 solid 1px;
+    cursor: default;
   }
-  .disabled:hover {
+  a.disabled:hover {
     background: #666666;
     color: #eeeeee;
   }

@@ -299,6 +299,7 @@ h2 a,
 p,
 .p {
   text-align: left;
+  margin: 10px 0;
 }
 /* HEADER */
 header {
@@ -318,11 +319,7 @@ header .logo img {
   float: left;
 }
 header .logo a span {
-  float: left;
-  text-decoration: none;
-  color: #ffffff;
-  margin: 2px 0 0 10px;
-  text-transform: lowercase;
+  display: none;
 }
 /* NAVIGATION */
 .anchor {
@@ -335,18 +332,10 @@ nav.top-menu ul {
 nav.top-menu ul li a,
 nav.top-menu ul li a:visited {
   color: #ffffff;
-  border-top: 1px #cccccc solid;
   text-decoration: none;
-  padding: 24px;
+  padding: 16px;
   display: block;
   text-transform: lowercase;
-}
-nav.top-menu ul li a:hover,
-nav.top-menu ul li a:visited:hover,
-nav.top-menu ul li a:focus,
-nav.top-menu ul li a:visited:focus {
-  background: #ffffff;
-  color: #666666;
 }
 /* SECTIONS */
 section {
@@ -390,12 +379,6 @@ section .feature img {
 .footer .anchor {
   padding: 0;
   margin: 0;
-}
-.footer-left {
-  float: left;
-}
-.footer-right {
-  float: right;
 }
 .footer-links ul {
   margin: 0;
@@ -490,6 +473,13 @@ section .feature img {
   header .logo {
     float: left;
   }
+  header .logo a span {
+    float: left;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 2px 0 0 10px;
+    text-transform: lowercase;
+  }
   header .top-menu {
     float: right;
     display: inline-block;
@@ -508,12 +498,8 @@ section .feature img {
   }
   nav.top-menu ul li a,
   nav.top-menu ul li a:visited {
-    color: #ffffff;
     border: 0;
-    text-decoration: none;
     padding: 24px;
-    display: block;
-    text-transform: lowercase;
   }
   nav.top-menu ul li a:hover,
   nav.top-menu ul li a:visited:hover,

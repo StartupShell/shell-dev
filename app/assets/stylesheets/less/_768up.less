@@ -40,6 +40,14 @@ header {
 
 	.logo {
 		float: left;
+
+		a span {
+			float: left;
+			text-decoration: none;
+			color: @white;
+			margin: 2px 0 0 10px;
+			text-transform: lowercase;
+		}
 	}
 
 	.top-menu {
@@ -68,12 +76,8 @@ nav.top-menu {
 			float: left;
 
 			a, a:visited {
-				color: @white;
 				border: 0;
-				text-decoration: none;
 				padding: 24px;
-				display: block;
-				text-transform: lowercase;
     			
     			&:hover, &:focus {
     				background: @white;

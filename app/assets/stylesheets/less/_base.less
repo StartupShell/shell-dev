@@ -64,6 +64,7 @@ h4, .h4 {
 
 p, .p {
 	text-align: left;
+	margin: 10px 0;
 }
 
 /* HEADER */
@@ -90,11 +91,7 @@ header {
 		}
 
 		a span {
-			float: left;
-			text-decoration: none;
-			color: @white;
-			margin: 2px 0 0 10px;
-			text-transform: lowercase;
+			display: none;
 		}
 	}
 
@@ -117,17 +114,12 @@ nav.top-menu {
 
 			a, a:visited {
 				color: @white;
-				border-top: 1px @mid-gray solid;
+				// border-top: 1px @mid-gray solid;
 				text-decoration: none;
-				padding: 24px;
+				padding: 16px;
 				display: block;
 				text-transform: lowercase;
-    			
-    			&:hover, &:focus {
-    				background: @white;
-    				color: @gray;
-    			}
-			}
+   			}
 		}
 	}
 }

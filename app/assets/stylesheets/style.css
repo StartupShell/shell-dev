@@ -433,6 +433,7 @@ section .feature img {
   display: none;
 }
 @media only screen and (min-width: 768px) {
+  @import "960_12_col.css";
   body {
     overflow-y: scroll;
   }
@@ -697,6 +698,7 @@ section .feature img {
     background: #666666;
     color: #eeeeee;
   }
+<<<<<<< HEAD
   /******************************************************************
   Site Name:
   Author:
@@ -788,4 +790,6 @@ section .feature img {
   .last {
     float: right;
   }
+=======
+>>>>>>> parent of 2dd9a24... revival
 }

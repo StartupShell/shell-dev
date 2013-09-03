@@ -392,6 +392,9 @@ section {
 section .feature {
   margin-bottom: 40px;
 }
+section .feature img {
+  max-width: 940px;
+}
 .section-alt {
   background: #eeeeee;
 }

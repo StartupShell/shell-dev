@@ -309,8 +309,7 @@ header .inner-header {
   margin: 0 auto;
 }
 header .logo {
-  margin: 0 auto;
-  margin-top: 22px;
+  margin: 22 auto 0;
 }
 header .logo img {
   float: left;
@@ -562,10 +561,6 @@ section .feature img {
     color: #ffffff !important;
     background: #cccccc !important;
     cursor: default;
-  }
-  a.disabled:hover {
-    background: #cccccc !important;
-    color: #ffffff !important;
   }
   /* ABOUT SECTION */
   .about p {

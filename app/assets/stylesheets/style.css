@@ -385,6 +385,7 @@ section .feature img {
   padding: 20px 0;
   background: #666666;
   color: #eeeeee;
+  display: inline-block;
 }
 .footer .anchor {
   padding: 0;
@@ -710,6 +711,13 @@ section .feature img {
   /* FOOTER */
   .footer {
     padding: 60px 0 80px;
+    display: block;
+  }
+  .footer-left {
+    float: left;
+  }
+  .footer-right {
+    float: right;
   }
   /* FANCY STYLES */
   ::-moz-selection {

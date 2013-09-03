@@ -501,7 +501,7 @@ section .feature {
   }
   /* SECTIONS */
   .inner-section {
-    width: 960px;
+    max-width: 960px;
     padding: 0 10px 80px;
   }
   .about {

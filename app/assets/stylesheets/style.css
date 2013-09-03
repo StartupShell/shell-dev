@@ -387,19 +387,20 @@ nav.top-menu ul li a:visited:focus {
 /* SECTIONS */
 section {
   padding: 40px 0;
-  width: 100%;
+  max-width: 100%;
 }
 section .feature {
   margin-bottom: 40px;
 }
 section .feature img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .section-alt {
   background: #eeeeee;
 }
 .inner-section {
-  width: 96%;
+  max-width: 96%;
   padding: 0 0 80px;
   margin: 0 auto;
 }

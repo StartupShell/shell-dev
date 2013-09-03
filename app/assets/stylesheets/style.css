@@ -277,7 +277,7 @@ h1,
   font-size: 50px;
   color: #dd6666;
   text-transform: uppercase;
-  margin: 0;
+  margin: 20px 0;
 }
 h2,
 .h2 {
@@ -287,7 +287,7 @@ h2,
   font-size: 50px;
   color: #dd6666;
   text-transform: uppercase;
-  margin: 0;
+  margin: 20px 0;
   font-size: 36px;
 }
 h2 a,
@@ -355,7 +355,8 @@ section {
   padding: 40px 0;
 }
 section .feature {
-  margin-bottom: 40px;
+  margin: 20px 0;
+  display: block;
 }
 section .feature img {
   width: 100%;
@@ -366,11 +367,7 @@ section .feature img {
 }
 .inner-section {
   max-width: 92%;
-  padding: 0 0 80px;
   margin: 0 auto;
-}
-.inner-section h1 {
-  margin-bottom: 40px;
 }
 .inner-section p {
   margin-bottom: 10px;
@@ -411,7 +408,7 @@ section .feature img {
 .footer-links ul li a:hover {
   opacity: 1;
 }
-/* BUTTONS */
+/* APPLY */
 .apply-button a,
 .apply-button a:visited {
   font-family: 'Titillium Web', sans-serif;
@@ -420,7 +417,7 @@ section .feature img {
   font-size: 50px;
   color: #dd6666;
   text-transform: uppercase;
-  margin: 0;
+  margin: 20px 0;
   font-size: 36px;
   text-align: center;
   width: 100%;
@@ -520,6 +517,9 @@ section .feature img {
     background: #ffffff;
     color: #666666;
   }
+  .form-all {
+    margin: 0 !important;
+  }
   .nav-emphasis {
     color: #ffff88 !important;
   }
@@ -540,11 +540,17 @@ section .feature img {
   .inner-section {
     max-width: 960px;
     width: 100%;
-    padding: 0 10px 80px;
+    padding: 20px 0;
+  }
+  .divider {
+    height: 1px;
+    margin-top: -1px;
+    border-top: 1px #666666 solid;
+    padding: 10px 0;
   }
   /* MORE MENU */
   .more-menu {
-    margin-top: 60px;
+    margin: 60px 0;
     display: block;
   }
   .more-menu p {
@@ -683,7 +689,7 @@ section .feature img {
     margin: 0 -10px !important;
   }
   .startup-grid img {
-    opacity: .65;
+    opacity: .75;
     margin-bottom: 20px;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;

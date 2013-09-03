@@ -40,6 +40,7 @@ header {
 
 	.logo {
 		float: left;
+		margin: 22px auto;
 
 		a span {
 			display: block;
@@ -136,7 +137,7 @@ nav.top-menu {
 
 	margin: 60px 0;
 	display: block;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 
 	p {
 		float: left;
@@ -208,6 +209,7 @@ a.disabled {
 }
 
 .event-date {
+	display: block;
 	background: @gray;
 	color: @white;
 	height: 140px;
@@ -232,15 +234,8 @@ a.disabled {
 .event-details {
 	
 	.event-name {
-		font-weight: 400;
-		text-transform: lowercase;
-		font-size: 36px;
 		margin: 0;
-		text-align: left;
-		display: block;
-		line-height: 1;
 		.t1;
-
 	}
 
 	.event-location {
@@ -304,6 +299,21 @@ a.disabled {
 .footer-right {
 	float: right;
 }
+
+.footer-links {
+	ul {
+		li {
+			a {
+				opacity: .8;
+				display: block;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
 
 /* FANCY STYLES */
 

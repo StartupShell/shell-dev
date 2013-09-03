@@ -83,7 +83,7 @@ header {
 
 	.logo {
 
-		margin: 22px auto;
+		margin: 22px auto 10px;
 		display: inline-block;
 
 		img {
@@ -116,7 +116,7 @@ nav.top-menu {
 				color: @white;
 				// border-top: 1px @mid-gray solid;
 				text-decoration: none;
-				padding: 16px;
+				padding: 12px;
 				display: block;
 				text-transform: lowercase;
    			}
@@ -155,6 +155,41 @@ section {
 	}
 }
 
+/* EVENTS SECTION */
+
+.event-wrapper {
+	margin-top: 40px;
+}
+
+.event-date {
+	display: none;
+}
+
+.event-details {
+	
+	.event-name {
+		font-weight: 400;
+		text-transform: lowercase;
+		font-size: 36px;
+		margin: 20px 0;
+		text-align: left;
+		display: block;
+		line-height: 1;
+	}
+
+	.event-location {
+		display: none;
+	}
+
+	.event-time {
+		display: none;
+	}
+
+	.event-description {
+		display: none;
+	}
+
+}
 
 /* ABOUT SECTION */
 
@@ -176,6 +211,7 @@ section {
 	background: @gray;
 	color: @light-gray;
 	display: inline-block;
+	width: 100%;
 
 	.anchor {
 		padding: 0;
@@ -189,13 +225,6 @@ section {
 		li {
 			float: left;
 			list-style-type: none;
-			a {
-				opacity: .8;
-				display: block;
-				&:hover {
-					opacity: 1;
-				}
-			}
 		}
 	}
 }

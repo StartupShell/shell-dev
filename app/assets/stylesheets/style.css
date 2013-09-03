@@ -476,7 +476,7 @@ section .feature img {
   a:visited:hover,
   a:focus,
   a:visited:focus {
-    color: #dd6666;
+    color: #666666;
   }
   /* HEADER */
   header {
@@ -553,7 +553,7 @@ section .feature img {
     height: 1px;
     margin-top: 1px;
     border-top: 1px #cccccc solid;
-    padding: 10px 0;
+    margin: 40px 0;
   }
   /* MORE MENU */
   .more-menu {

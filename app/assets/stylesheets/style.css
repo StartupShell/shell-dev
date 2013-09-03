@@ -307,11 +307,11 @@ header {
   z-index: 1;
 }
 header .inner-header {
-  padding: 0 10px;
+  padding: 0;
   margin: 0 auto;
 }
 header .logo {
-  margin: 22px auto 0;
+  margin: 22px auto;
   display: inline-block;
 }
 header .logo img {
@@ -324,16 +324,13 @@ header .logo a span {
   margin: 2px 0 0 10px;
   text-transform: lowercase;
 }
-header .top-menu {
-  display: inline-block;
-  margin: 0 auto;
-}
 /* NAVIGATION */
 .anchor {
   padding: 40px;
 }
 nav.top-menu ul {
   margin: 0;
+  padding: 0;
 }
 nav.top-menu ul li a,
 nav.top-menu ul li a:visited {

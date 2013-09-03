@@ -191,6 +191,31 @@ section {
 	color: @light-gray;
 }
 
+.footer-left {
+	float: left;
+}
+
+.footer-right {
+	float: right;
+}
+
+.footer-links {
+	ul {
+		margin: 0;
+		li {
+			float: left;
+			list-style-type: none;
+			a {
+				opacity: .8;
+				display: block;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
 /* BUTTONS */
 
 .apply-button a, .apply-button a:visited {

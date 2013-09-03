@@ -391,6 +391,26 @@ section .feature img {
   background: #666666;
   color: #eeeeee;
 }
+.footer-left {
+  float: left;
+}
+.footer-right {
+  float: right;
+}
+.footer-links ul {
+  margin: 0;
+}
+.footer-links ul li {
+  float: left;
+  list-style-type: none;
+}
+.footer-links ul li a {
+  opacity: .8;
+  display: block;
+}
+.footer-links ul li a:hover {
+  opacity: 1;
+}
 /* BUTTONS */
 .apply-button a,
 .apply-button a:visited {

@@ -474,6 +474,7 @@ section .feature img {
     float: left;
   }
   header .logo a span {
+    display: block;
     float: left;
     text-decoration: none;
     color: #ffffff;

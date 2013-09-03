@@ -305,6 +305,7 @@ header {
   z-index: 1;
 }
 header .inner-header {
+  width: 100%;
   max-width: 960px;
   padding: 0 10px;
   margin: 0 auto;
@@ -388,6 +389,7 @@ nav.top-menu ul li a:visited:focus {
 /* SECTIONS */
 section {
   padding: 40px 0;
+  width: 100%;
 }
 section .feature {
   margin-bottom: 40px;

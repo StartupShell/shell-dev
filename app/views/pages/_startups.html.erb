@@ -2,7 +2,7 @@
 <div class="inner-section">
 
     <h1>Home to diverse ventures</h1>
-    <div class="startup-grid">
+    <div class="startup-grid container_12">
         <% @startups.shuffle.each do |start|
             # if no URL disable cursor and clicking
             hide = ""
@@ -12,7 +12,7 @@
             end
             %>
 
-            <%= link_to(image_tag("startups/"+start[1], :class => "threecol" + hide, :alt=>start[2]), start[0], :target => "_blank")%>
+            <%= link_to(image_tag("startups/"+start[1], :class => "grid_3" + hide, :alt=>start[2]), start[0], :target => "_blank")%>
         <% end %>
     </div>
 

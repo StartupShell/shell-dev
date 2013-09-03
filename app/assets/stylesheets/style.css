@@ -305,8 +305,6 @@ header {
   z-index: 1;
 }
 header .inner-header {
-  width: 100%;
-  max-width: 960px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -396,7 +394,6 @@ section .feature {
 }
 section .feature img {
   width: 100%;
-  max-width: 940px;
 }
 .section-alt {
   background: #eeeeee;
@@ -506,6 +503,9 @@ section .feature img {
     color: #666666 !important;
   }
   /* SECTIONS */
+  .feature img {
+    max-width: 940px;
+  }
   .inner-section {
     max-width: 960px;
     padding: 0 10px 80px;

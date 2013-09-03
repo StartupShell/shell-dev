@@ -309,7 +309,7 @@ header .inner-header {
   margin: 0 auto;
 }
 header .logo {
-  margin: 22 auto 0;
+  margin: 22px auto 0;
 }
 header .logo img {
   float: left;

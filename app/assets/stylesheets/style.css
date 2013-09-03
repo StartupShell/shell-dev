@@ -393,6 +393,7 @@ section .feature {
   margin-bottom: 40px;
 }
 section .feature img {
+  width: 100%;
   max-width: 940px;
 }
 .section-alt {

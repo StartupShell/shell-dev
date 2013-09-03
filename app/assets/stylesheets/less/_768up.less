@@ -125,44 +125,6 @@ nav.top-menu {
 	padding: 0 10px 80px;
 }
 
-.about {
-
-	background: @red;
-	color: @white;
-
-	h1 {
-		color: @white;
-		margin-top: 0;
-	}
-
-	p {
-		font-size: 28px;
-	}
-
-}
-
-/* FOOTER */
-
-.footer {
-	padding: 20px 0 40px; 
-	background: @gray;
-	color: @light-gray;
-}
-
-/* BUTTONS */
-
-.apply-button a, .apply-button a:visited {
-	.h2;
-	text-align: center;
-	width: 100%;
-	padding: 40px;
-	display: block;
-	text-decoration: none;
-	box-sizing: border-box;
-	.button;
-	font-size: 30px;
-	margin-top: 40px;
-}
 
 /* EVENTS SECTION */
 
@@ -260,6 +222,44 @@ nav.top-menu {
 	}
 }
 
+.more-menu {
+
+	margin-top: 60px;
+	display: block;
+
+	p {
+		float: left;
+		padding-top: 8px;
+	}
+
+	ul {
+		float: left;
+		margin: 0;
+		padding-left: 20px;
+
+		li {
+			float: left;
+
+			a, a:visited {
+				color: @gray;
+				text-decoration: none;
+				display: block;
+				text-transform: lowercase;
+				border: 1px @red solid;
+				margin: 0 10px;
+				padding: 8px 20px;
+
+    			&:hover, &:focus {
+    				background: @red;
+    				color: @white;
+    			}
+
+			}
+		}
+	}
+}
+
+
 .no-link {
 	cursor: default;
 }
@@ -281,6 +281,7 @@ nav.top-menu {
 a.disabled {
 	border: @gray solid 1px;
 	cursor: default;
+	display: block;
 	&:hover {
 		background: @gray;
 		color: @light-gray;

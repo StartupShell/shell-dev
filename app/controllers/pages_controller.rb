@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 	def index 
         ## Calendar Configuration ##
         @id = "7qvrobfs0js5799ebugodgc5go%40group.calendar.google.com"
-        @results = "4"
+        @results = "5"
 
         ## Startup Configuration ##
         # url, logo, altText

@@ -637,7 +637,6 @@ section .feature img {
   }
   .event-date .event-month {
     text-transform: lowercase;
-    zoom: 1;
   }
   .event-date .event-day {
     font-weight: 700;
@@ -645,7 +644,6 @@ section .feature img {
     font-size: 72px;
     margin: 0;
     line-height: 1;
-    zoom: 1;
   }
   .event-details .event-name {
     margin: 0;

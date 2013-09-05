@@ -565,6 +565,7 @@ section .feature img {
   .more-menu p {
     float: left;
     padding-top: 8px;
+    margin: 0;
   }
   .more-menu ul {
     float: left;

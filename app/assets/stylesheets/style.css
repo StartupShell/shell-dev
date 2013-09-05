@@ -356,6 +356,12 @@ section .feature img {
   max-width: 92%;
   margin: 0 auto;
 }
+.divider {
+  height: 1px;
+  margin-top: 1px;
+  border-top: 1px #cccccc solid;
+  margin: 40px 0;
+}
 /* EVENTS SECTION */
 .event-wrapper {
   margin-top: 40px;
@@ -550,12 +556,6 @@ section .feature img {
     width: 100%;
     padding: 20px 0;
   }
-  .divider {
-    height: 1px;
-    margin-top: 1px;
-    border-top: 1px #cccccc solid;
-    margin: 40px 0;
-  }
   /* MORE MENU */
   .more-menu {
     margin: 60px 0;
@@ -658,7 +658,7 @@ section .feature img {
     float: left;
     display: inline-block;
     font-weight: 700;
-    margin-top: 19px;
+    margin: 19px 0 0 0;
     color: #666666;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -669,8 +669,8 @@ section .feature img {
   .event-details .event-time {
     float: left;
     display: inline-block;
-    margin-top: 19px;
-    margin-left: 20px;
+    font-weight: 700;
+    margin: 19px 20px 0 0;
     color: #666666;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;

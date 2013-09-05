@@ -18,8 +18,8 @@
                     <div class="event-title clearfix">
                         <h2 class="event-name clearfix"><%= entry['title']['$t'] %></h2>
                         <div class="clearfix">
-                            <p class="event-location"><%= entry['gd$where'][0]['valueString'] %></p>
                             <p class="event-time"><%= time.strftime("%l:%M %P") %></p>
+                            <p class="event-location"><%= entry['gd$where'][0]['valueString'] %></p>
                         </div>
                     </div>
                     <p class="event-description clearfix"><%= entry['content']['$t'] %></p>

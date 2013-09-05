@@ -356,10 +356,6 @@ section .feature img {
   max-width: 92%;
   margin: 0 auto;
 }
-.inner-section p {
-  margin-bottom: 10px;
-  margin: 0 auto;
-}
 /* EVENTS SECTION */
 .event-wrapper {
   margin-top: 40px;

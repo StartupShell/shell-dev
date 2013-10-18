@@ -1,5 +1,5 @@
 function startUpdate() {
-  var myVar=setInterval(function(){updateImage()},1750);
+  var myVar=setInterval(function(){updateImage()},3000);
 }
 function updateImage()  {
   if (document.wait) {

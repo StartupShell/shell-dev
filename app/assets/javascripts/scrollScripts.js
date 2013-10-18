@@ -1,14 +1,24 @@
-document.img1 = new Image();
-document.img1.src = "http://jacksongeller.mycpanel.co.uk/jackson/shellpic.jpg";
-document.img0 = new Image();
-document.img0.src = "/assets/space-feature-e0accdee0398da8e7a7433451fc278c7.jpg";
+function startUpdate() {
+  var myVar=setInterval(function(){updateImage()},1750);
+}
+function updateImage()  {
+  if (document.wait) {
+    document.getElementById("shellbot").src=document.img1.src;
+  }
 
-
+}
 $( "#shellbot" )
   .mouseenter(function() {
-    document.getElementById("shellbot").src=document.img1.src;
+    document.wait = true;
+    document.img1 = new Image();
+    document.img1.src = "http://jacksongeller.mycpanel.co.uk/jackson/shellpic.jpg";
+    startUpdate();
+   
   })
   .mouseleave(function() {
+    document.wait = false;
+    document.img0 = new Image();
+    document.img0.src = "/assets/space-feature-e0accdee0398da8e7a7433451fc278c7.jpg";
     document.getElementById("shellbot").src=document.img0.src;
   });
 
@@ -19,6 +29,7 @@ $(document).ready(function(){
   //nav-active
   smoothScroll();
   scrollDisplay();
+      timeout = window.setTimeout(updateImage(),30000);
 
 });
 

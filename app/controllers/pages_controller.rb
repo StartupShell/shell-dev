@@ -25,4 +25,6 @@ class PagesController < ApplicationController
 	def apply
 	end
 
+    def stalk
+    end
 end

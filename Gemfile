@@ -22,7 +22,7 @@ gem 'json'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'devise'
+#gem 'devise'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

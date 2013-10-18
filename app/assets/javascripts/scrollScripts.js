@@ -1,9 +1,25 @@
+document.img1 = new Image();
+document.img1.src = "http://jacksongeller.mycpanel.co.uk/jackson/shellpic.jpg";
+document.img0 = new Image();
+document.img0.src = "/assets/space-feature-e0accdee0398da8e7a7433451fc278c7.jpg";
+
+
+$( "#shellbot" )
+  .mouseenter(function() {
+    document.getElementById("shellbot").src=document.img1.src;
+  })
+  .mouseleave(function() {
+    document.getElementById("shellbot").src=document.img0.src;
+  });
+
+
 $(document).ready(function(){
   //init all scripts - yo
 
   //nav-active
   smoothScroll();
   scrollDisplay();
+
 });
 
 function smoothScroll() {

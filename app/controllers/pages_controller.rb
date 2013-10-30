@@ -20,7 +20,7 @@ class PagesController < ApplicationController
             ["http://miyagi.me", "logo-miyagi.png", "Miyagi"],
             ["http://ventureboard.co", "logo-ventureboard.png", "VentureBoard"],
             ["http://bitca.mp", "logo-bitcamp.png", "Bitcamp"],
-            ["http://scottblock.com", "logo-scottblock.png", "scottblock.com"],
+            # ["http://scottblock.com", "logo-scottblock.png", "scottblock.com"],
             ["http://gethotdrop.com", "logo-hotdrop.png", "Hotdrop"],
             ["http://customspraysolutions.com", "logo-customspraysolutions.png", "Custom Spray Solutions"],
             ["http://q-resume.com", "logo-qresume.png", "QResume"],

@@ -18,11 +18,12 @@ class PagesController < ApplicationController
             ["", "logo-carpemuse.png", "carpemuse"],
             ["http://www.imaginex.co", "logo-imaginex.png", "[Imaginex]"],
             ["http://www.miyagi.me", "logo-miyagi.png", "Miyagi"],
-            ["http://ventureboard.co", "logo-ventureboard.png", "VentureBoard"]]
-            ["http://bitca.mp", "logo-bitcamp.png", "Bitcamp"]]
-            ["http://scottblock.com", "logo-scottblock.png", "scottblock.com"]]
-            ["http://gethotdrop.com", "logo-hotdrop.png", "Hotdrop"]]
-            ["http://www.customspraysolutions.com", "logo-customspraysolutions.png", "Custom Spray Solutions"]]
+            ["http://ventureboard.co", "logo-ventureboard.png", "VentureBoard"],
+            ["http://bitca.mp", "logo-bitcamp.png", "Bitcamp"],
+            ["http://scottblock.com", "logo-scottblock.png", "scottblock.com"],
+            ["http://gethotdrop.com", "logo-hotdrop.png", "Hotdrop"],
+            ["http://www.customspraysolutions.com", "logo-customspraysolutions.png", "Custom Spray Solutions"],
+            ["http://mademicrofinance.org", "logo-made.png", "MADE Microfinance"]]
 
          @startups = startupFiles.shuffle
 	end

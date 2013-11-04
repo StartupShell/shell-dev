@@ -7,7 +7,7 @@ class PagesController < ApplicationController
 
         ## Startup Configuration ##
         # url, logo, altText
-		startupFiles = [["", "logo-512.png", "512 Technology"],
+		startupFiles = [["http://512technology.com", "logo-512.png", "512 Technology"],
             ["", "logo-arcadeglass.png", "Arcade Glass"], 
             ["http://shopevlove.com", "logo-evlove.png", "Evlove"],
             ["http://foodrecoverynetwork.org", "logo-frn.png", "Food Recovery Network"],

@@ -3,9 +3,6 @@ function startUpdate() {
 }
 function updateImage()  {
   if (document.wait) {
-    document.img1 = new Image();
-    document.img1.src = "http://jacksongeller.mycpanel.co.uk/jackson/shellpic.jpg";
-    if (document.img1.complete)
     document.getElementById("shellbot").src=document.img1.src;
   }
 
@@ -13,7 +10,8 @@ function updateImage()  {
 $( "#shellbot" )
   .mouseenter(function() {
     document.wait = true;
-
+    document.img1 = new Image();
+    document.img1.src = "http://jacksongeller.mycpanel.co.uk/jackson/shellpic.jpg";
     startUpdate();
    
   })

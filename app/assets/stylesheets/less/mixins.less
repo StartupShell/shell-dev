@@ -1,0 +1,69 @@
+/*********************
+COLORS
+*********************/
+
+@red: #dd6666;
+
+@yellow: #ffff88;
+
+@gray: #666666;
+@light-gray: #eeeeee;
+@mid-gray: #999999;
+
+@white: #ffffff;
+@black: #000000;
+
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+@titillium: 'Titillium Web', sans-serif;
+
+/* text alignment */
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+
+/*********************
+TRANSITION
+*********************/
+
+/* .transition(all,2s); */
+.transition(@what: all, @time: 0.2s, @transition: ease-in-out) {
+	-webkit-transition: @what @time @transition;
+	-moz-transition:    @what @time @transition;
+	-ms-transition:     @what @time @transition;
+	-o-transition:      @what @time @transition;
+	transition:         @what @time @transition;
+}
+
+.t1 {
+	.transition(all,.2s,ease);
+}
+
+
+/*********************
+BOX SHADOW
+*********************/
+
+/* .boxShadow(0,0,4px,0,#444); */
+.boxShadow(@x: 0, @y: 0, @radius: 4px, @spread: 0, @color: rgba(0,0,0,0.5)) when (isnumber(@x)) {
+	-webkit-box-shadow: @x @y @radius @spread @color;
+	   -moz-box-shadow: @x @y @radius @spread @color;
+			box-shadow: @x @y @radius @spread @color; 
+}
+
+
+/*********************
+BUTTON
+*********************/
+
+.button {
+	background: @red;
+	color: @white;
+	&:hover {
+		color: @light-gray;
+	}
+}

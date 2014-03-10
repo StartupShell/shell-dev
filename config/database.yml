@@ -8,8 +8,8 @@ development:
   encoding: unicode
   database: localShell
   host: localhost
-  username: heroku-local
-  password: shelldev5
+  username: shell
+  password: test
   
 
 # Warning: The database defined as "test" will be erased and

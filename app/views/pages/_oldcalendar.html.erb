@@ -1,0 +1,32 @@
+<div class="event-wrapper">
+<% cache("cal1", :expires_in => 1.minutes) do 
+    require 'open-uri'
+    require 'json'
+    url = "http://www.google.com/calendar/feeds/"+@id+"/public/full?alt=json&orderby=starttime&max-results="+@results+"&singleevents=true&sortorder=ascending&futureevents=true"
+    doc = open(url)
+    jsonObj = JSON.load(doc)
+    jsonObj['feed']['entry'].each do |entry|
+    if (entry['title']['$t'] != "")
+        time = DateTime.iso8601(entry['gd$when'][0]['startTime']) %>
+        <a href="<%= entry['link'][0]['href'] %>" target="_blank">
+            <div class="event-block container_12">
+        	    <div class="event-date grid_2 alpha">
+        	        <span class="event-month clearfix"><%= time.strftime("%B") %></span>
+        	        <span class="event-day"><%= time.day %></span>
+        	    </div>
+                <div class="event-details grid_10 omega">
+                    <div class="event-title clearfix">
+                        <h2 class="event-name clearfix"><%= entry['title']['$t'] %></h2>
+                        <div class="clearfix">
+                            <p class="event-time"><%= time.strftime("%l:%M %P") %></p>
+                            <p class="event-location"><%= entry['gd$where'][0]['valueString'] %></p>
+                        </div>
+                    </div>
+                    <p class="event-description clearfix"><%= entry['content']['$t'] %></p>
+                </div>
+            </div>
+        </a>
+        <% end %>
+    <% end %>
+<% end %>
+</div>

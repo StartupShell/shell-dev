@@ -10,6 +10,10 @@
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
+    <!-- Load Google webfont -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
+    <!-- end Load Google webfont -->
+
     <!-- Facebook Open Graph meta tags -->
         <meta property="og:image" content="http://i.imgur.com/e1dNQDT.png" />
         <meta property="og:title" content="Startup Shell" />
@@ -51,9 +55,8 @@
                 <nav class="top-menu">
                     <ul>
                         <li><%=link_to("About", "/#about", {id: "aboutI"})%></li>
-                        <li><%=link_to("Events", "/#events", {id: "eventsI"})%></li>
-                        <li><%=link_to("Startups", "/#startups", {id: "startupsI"})%></li>
-                        <li><%=link_to("People", "/#people", {id: "peopleI"})%></li>
+                        <li><%=link_to("Ventures", "/#startups", {id: "startupsI"})%></li>
+                        <li><%=link_to("Connect", "/#events", {id: "eventsI"})%></li>
                         <li><%=link_to("Apply",  {controller: "pages", action: "apply"}, {class: "nav-emphasis", id: "nav-apply"})%></li>
                     </ul>
                 </nav>

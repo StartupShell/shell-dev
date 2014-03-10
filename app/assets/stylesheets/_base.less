@@ -1,0 +1,244 @@
+
+/* MAIN LAYOUT STYLES */
+
+body {
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: @titillium;
+    font-weight: 400;
+    color: @gray;
+    text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+/* LINKS */
+
+a, a:visited {
+    color: @red;
+    text-decoration: underline;
+
+
+    /* mobile tap color */
+    &:link {
+        /*
+        this highlights links on iPhones/iPads.
+        so it basically works like the :hover selector
+        for mobile devices.
+        */
+        -webkit-tap-highlight-color : @red;
+    }
+}
+
+/* HEADINGS */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: @titillium;
+	font-weight: 700;
+    text-rendering: optimizelegibility;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h1, .h1 {
+	font-size: 5em;
+	color: @red;
+	text-transform: uppercase;
+	margin: .5em 0;
+	line-height: 1.25;
+ }
+
+h2, .h2 {
+	text-align: left;
+	font-size: 3.5em;
+	color: @gray;
+	text-transform: uppercase;
+	margin: .5em 0;
+	line-height: 1.25;
+	border-bottom: 1px @light-gray solid;
+}
+
+h3, .h3 {
+	font-size: 1.75em;
+	color: @gray;
+	line-height: 1.25;
+
+}
+
+h4, .h4 {
+}
+
+p, .p {
+	text-align: left;
+	margin: 1em 0;
+}
+
+input {
+	font-family: @titillium;
+	font-weight: 400;
+}
+
+/* HEADER */
+
+header {
+
+	background: @light-gray;
+	position: relative;
+	// .boxShadow(0,0,4px,0,rgba(0,0,0,0.35));
+	z-index: 1;
+
+	.inner-header {
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.logo {
+		margin: .25em auto 10px;
+		display: inline-block;
+		img {
+			float: left;
+		}
+	}
+
+}
+
+/* NAVIGATION */
+
+.anchor {
+	padding: 1em;
+}
+
+nav.top-menu {
+
+	ul {
+	
+		margin: 0;
+		padding: 0;
+	
+		li {
+
+			a, a:visited {
+				color: @gray;
+				// border-top: 1px @mid-gray solid;
+				text-decoration: none;
+				padding: 12px;
+				display: block;
+				text-transform: lowercase;
+   			}
+		}
+	}
+}
+
+
+/* SECTIONS */
+
+section {
+	margin: 1em 0;
+}
+
+.inner-section {
+	max-width: 92%;
+	margin: 0 auto;
+}
+
+
+/* FEATURE */
+
+.feature {
+	background: url("bg1.jpg") no-repeat fixed;
+	height: 40em;
+	max-height: 100%;
+	padding-top: 10em;
+	margin: 0;
+
+}
+
+.intro {
+	color: @white;
+	max-width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.125em;
+}
+
+
+/* SUBSCRIBE */
+
+.subscribe {
+	margin: 0;
+	border-bottom: 1px solid @light-gray;
+
+	input {
+
+		padding: 1em;
+		width: 100%;
+		text-align: left;
+		font-size: 1.75em;
+		border: 0;
+		outline: 0;
+		color: @gray;
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	label {
+		position: absolute;
+		top: 0;
+		height: 45px;
+		width: 3.5em;
+		cursor: pointer;
+		display: block;
+		-webkit-transition: 0.3s ease opacity;
+		-moz-transition: 0.3s ease opacity;
+		-ms-transition: 0.3s ease opacity;
+		-o-transition: 0.3s ease opacity;
+		transition: 0.3s ease opacity;
+	}
+}
+
+
+
+/* FOOTER */
+
+.footer {
+	padding: .5em 0;
+	background: @gray;
+	color: @light-gray;
+	display: inline-block;
+	width: 100%;
+
+	.anchor {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.footer-links {
+	ul {
+		margin: 0;
+		li {
+			float: left;
+			list-style-type: none;
+		}
+	}
+}
+
+/* APPLY */
+
+.apply-button a, .apply-button a:visited {
+	.h2;
+	text-align: center;
+	width: 100%;
+	padding: 40px;
+	display: block;
+	text-decoration: none;
+	box-sizing: border-box;
+	.button;
+	font-size: 30px;
+	margin-top: 40px;
+}

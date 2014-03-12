@@ -1,38 +1,3 @@
-function startUpdate() {
-  var myVar=setInterval(function(){updateImage()},3000);
-}
-function updateImage()  {
-  if (document.wait) {
-    document.getElementById("shellbot").src=document.img1.src;
-  }
-
-}
-$( "#shellbot" )
-  .mouseenter(function() {
-    document.wait = true;
-    document.img1 = new Image();
-    document.img1.src = "http://jacksongeller.mycpanel.co.uk/jackson/shellpic.jpg";
-    startUpdate();
-   
-  })
-  .mouseleave(function() {
-    document.wait = false;
-    document.img0 = new Image();
-    document.img0.src = "/assets/space-feature-e0accdee0398da8e7a7433451fc278c7.jpg";
-    document.getElementById("shellbot").src=document.img0.src;
-  });
-
-
-$(document).ready(function(){
-  //init all scripts - yo
-
-  //nav-active
-  smoothScroll();
-  scrollDisplay();
-      timeout = window.setTimeout(updateImage(),30000);
-
-});
-
 function smoothScroll() {
   $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')

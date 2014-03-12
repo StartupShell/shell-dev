@@ -11,7 +11,6 @@ ShellWeb::Application.routes.draw do
   # Setup admin section
   get 'admin/' => 'admin#index'
   get 'apply/' => 'pages#apply'
-  get 'stalk/' => 'pages#stalk'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

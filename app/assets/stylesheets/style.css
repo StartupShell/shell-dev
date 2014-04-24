@@ -587,7 +587,6 @@ video#bgvid {
     margin: .125em 0;
   }
   .event-block:hover .event-time,
-  .event-block:hover .event-location,
   .event-block:hover .event-description {
     color: #666666;
   }
@@ -602,7 +601,6 @@ video#bgvid {
     text-decoration: none;
   }
   .event-date,
-  .event-location,
   .event-description {
     color: #999999;
     -webkit-transition: all 0.2s ease;

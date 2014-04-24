@@ -5,10 +5,6 @@ body {
 	overflow-y: scroll;
 }
 
-.container {
-	margin: 0 auto;
-}
-
 
 /* LINKS */
 
@@ -17,7 +13,8 @@ a, a:visited {
 
     /* on hover */
     &:hover, &:focus {
-        color: @gray;
+        // padding-bottom: 1px;
+        border-bottom: 1px dotted @mid-gray;
     }
 
 }
@@ -43,9 +40,9 @@ header {
 		a span {
 			display: block;
 			float: left;
+			margin-left: 10px;
 			text-decoration: none;
 			color: @gray;
-			margin: 2px 0 0 10px;
 			text-transform: lowercase;
 		}
 	}
@@ -107,20 +104,16 @@ nav.top-menu {
 
 /* SECTIONS */
 
-.feature {
-	h1 {
-		color: @white;
-	}
-	img {
-		width: 100%;
-		z-index: 0;
-	}
-}
-
-
 .inner-section {
 	max-width: 940px;
 	width: 100%;
+}
+
+
+/* FEATURE */
+
+.intro {
+	max-width: 50%;
 }
 
 

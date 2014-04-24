@@ -156,10 +156,12 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  a,
-  a:visited {
-    /*text-decoration: underline;*/
-  }
+  /*
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+*/
   a[href]:after {
     content: " (" attr(href) ")";
   }
@@ -220,8 +222,7 @@ body {
 a,
 a:visited {
   color: #dd6666;
-  /*text-decoration: underline;
-   mobile tap color */
+  /* mobile tap color */
 }
 a:link,
 a:visited:link {
@@ -310,9 +311,6 @@ header .logo img {
   float: left;
 }
 /* NAVIGATION */
-.anchor {
-  padding: 1em;
-}
 nav.top-menu ul {
   margin: 0;
   padding: 0;
@@ -327,19 +325,41 @@ nav.top-menu ul li a:visited {
 }
 /* SECTIONS */
 section {
-  margin: 1em 0;
+  padding: 1em 0;
+  background: white;
 }
 .inner-section {
   max-width: 92%;
   margin: 0 auto;
 }
 /* FEATURE */
+#bg {
+  position: fixed;
+  top: -20%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -100;
+}
+video#bgvid {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -100;
+  background: url(timelapse.jpg);
+}
 .feature {
-  background: url("bg1.jpg") no-repeat fixed;
   height: 40em;
   max-height: 100%;
   padding-top: 10em;
   margin: 0;
+  background: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 2em #000, 0 0 1em #000;
 }
 .intro {
   color: #ffffff;

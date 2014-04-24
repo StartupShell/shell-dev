@@ -582,15 +582,12 @@ video#bgvid {
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    text-decoration: none !important;
   }
   .event-block p {
     margin: .125em 0;
   }
   .event-block:hover .event-time,
-  .event-block:hover .event-location {
-    color: #dd6666;
-  }
+  .event-block:hover .event-location,
   .event-block:hover .event-description {
     color: #666666;
   }
@@ -605,15 +602,7 @@ video#bgvid {
     text-decoration: none;
   }
   .event-date,
-  .event-location {
-    color: #666666;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    text-decoration: none;
-  }
+  .event-location,
   .event-description {
     color: #999999;
     -webkit-transition: all 0.2s ease;
@@ -621,11 +610,10 @@ video#bgvid {
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    text-decoration: none;
   }
   /* PARTNERS SECTION */
   .partners {
-    margin: 2em 0;
+    padding: 2em 0;
   }
   /* FOOTER */
   .footer {

@@ -151,17 +151,12 @@ nav.top-menu {
 	text-align: left;
 	.t1;
 
-	text-decoration: none !important;
-
 	p {
 		margin: .125em 0;
 	}
 
 	&:hover {
-		.event-time, .event-location {
-			color: @red;
-		}
-		.event-description {
+		.event-time, .event-location, .event-description {
 			color: @gray;
 		}
 	}
@@ -174,23 +169,15 @@ nav.top-menu {
 	text-decoration: none;
 }
 
-.event-date, .event-location {
-	color: @gray;
-	.t1;
-	text-decoration: none;
-}
-
-.event-description {
+.event-date, .event-location, .event-description {
 	color: @mid-gray;
 	.t1;
-	text-decoration: none;
 }
-
 
 /* PARTNERS SECTION */
 
 .partners {
-	margin: 2em 0;
+	padding: 2em 0;
 }
 
 /* FOOTER */

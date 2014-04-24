@@ -11,8 +11,7 @@
         <a href="<%= entry['link'][0]['href'] %>" target="_blank">
             <div class="event-block">
                 <h3 class="event-name"><%= entry['title']['$t'] %></h3>
-                <p class="event-time"><%= time.strftime("%B") %> <%= time.day %>, <%= time.strftime("%l:%M %P") %></p>
-                <p class="event-location"><%= entry['gd$where'][0]['valueString'] %></p>
+                <p class="event-time"><%= time.strftime("%B") %> <%= time.day %>, <%= time.strftime("%l:%M %P") %> @ <%= entry['gd$where'][0]['valueString'] %></p>
                 <p class="event-description"><%= entry['content']['$t'] %></p>
             </div>
         </a>

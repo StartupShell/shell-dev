@@ -278,7 +278,7 @@ h1,
   color: #dd6666;
   text-transform: uppercase;
   margin: .5em 0;
-  line-height: 1.25;
+  line-height: 1;
 }
 h2,
 .h2 {
@@ -307,6 +307,7 @@ input {
 }
 /* HEADER */
 header {
+  font-size: 1.125em;
   background: #eeeeee;
   position: relative;
   z-index: 1;
@@ -321,6 +322,9 @@ header .logo {
 }
 header .logo img {
   float: left;
+}
+header .logo a span {
+  display: none;
 }
 /* NAVIGATION */
 nav.top-menu ul {
@@ -373,9 +377,11 @@ video#bgvid {
   background: rgba(0, 0, 0, 0);
   text-shadow: 0 0 2em #000, 0 0 1em #000;
 }
+.feature h1 {
+  color: #ffffff;
+}
 .intro {
   color: #ffffff;
-  max-width: 50%;
   margin: 0 auto;
   text-align: center;
   font-size: 1.125em;
@@ -466,9 +472,6 @@ video#bgvid {
   body {
     overflow-y: scroll;
   }
-  .container {
-    margin: 0 auto;
-  }
   /* LINKS */
   a,
   a:visited {
@@ -483,7 +486,7 @@ video#bgvid {
   a:visited:hover,
   a:focus,
   a:visited:focus {
-    color: #666666;
+    border-bottom: 1px dotted #999999;
   }
   /* HEADER */
   header {
@@ -505,9 +508,9 @@ video#bgvid {
   header .logo a span {
     display: block;
     float: left;
+    margin-left: 10px;
     text-decoration: none;
     color: #666666;
-    margin: 2px 0 0 10px;
     text-transform: lowercase;
   }
   header .top-menu {
@@ -554,16 +557,13 @@ video#bgvid {
     color: #666666 !important;
   }
   /* SECTIONS */
-  .feature h1 {
-    color: #ffffff;
-  }
-  .feature img {
-    width: 100%;
-    z-index: 0;
-  }
   .inner-section {
     max-width: 940px;
     width: 100%;
+  }
+  /* FEATURE */
+  .intro {
+    max-width: 50%;
   }
   /* VENTURES SECTION */
   .startup-grid {

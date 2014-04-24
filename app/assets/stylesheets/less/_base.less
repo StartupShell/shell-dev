@@ -51,7 +51,7 @@ h1, .h1 {
 	color: @red;
 	text-transform: uppercase;
 	margin: .5em 0;
-	line-height: 1.25;
+	line-height: 1;
  }
 
 h2, .h2 {
@@ -88,6 +88,7 @@ input {
 
 header {
 
+	font-size: 1.125em;
 	background: @light-gray;
 	position: relative;
 	// .boxShadow(0,0,4px,0,rgba(0,0,0,0.35));
@@ -103,6 +104,10 @@ header {
 		display: inline-block;
 		img {
 			float: left;
+		}
+
+		a span {
+			display: none;
 		}
 	}
 
@@ -175,6 +180,9 @@ video#bgvid {
 
 .feature {
 	// background: url("bg1.jpg") no-repeat fixed;
+	h1 {
+		color: @white;
+	}
 	height: 40em;
 	max-height: 100%;
 	padding-top: 10em;
@@ -185,7 +193,6 @@ video#bgvid {
 
 .intro {
 	color: @white;
-	max-width: 50%;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 1.125em;
